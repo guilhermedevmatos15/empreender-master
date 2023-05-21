@@ -18,7 +18,7 @@ import Login from './pages/Login/Login';
 
 document.addEventListener('DOMContentLoaded', function () {
    setTimeout(() => {
-      initSmoothScroll(115, 1400);
+      initSmoothScroll(121, 1600);
    }, 500);
 });
 

@@ -25,28 +25,28 @@ const Home = (props) => {
 
          <section className="hero section">
             <div className="content">
-               <h1>
+               <h1 data-aos='fade-up' data-aos-duration='1500'>
                   Empower Your
                   <br />
                   Business
                </h1>
-               <p>
+               <p data-aos='fade-up' data-aos-duration='1800' data-aos-delay='200'>
                   Streamline your operations, boost productivity, and unlock
                   your full potential. For you, the administrator, who seeks
                   efficiency and growth.
                </p>
                <Link to={'/Login'}>
-                  <button className="b-try-it">Try It</button>
+                  <button className="b-try-it" data-aos='fade-up' data-aos-duration='2000' data-aos-delay='300'>Try It</button>
                </Link>
             </div>
             <div className="image">
-               <img src={Illustration} alt="illustration user" />
+               <img src={Illustration} alt="illustration user" data-aos='fade-up' data-aos-duration='1600' data-aos-delay='200' />
             </div>
          </section>
 
          <section className="resources section">
-            <h2>Recources and Services</h2>
-            <div className="card-conteiner">
+            <h2 data-aos='fade-up' data-aos-duration='1600' data-aos-delay='0'>Recources and Services</h2>
+            <div className="card-conteiner" data-aos='zoom-in' data-aos-duration='1500' data-aos-delay='200'>
                <SmallCard
                   title="Employee Management"
                   subtitle="Optimize your team management with our intuitive employee management tool, allowing you to assign tasks, monitor performance, and simplify communication."
@@ -63,15 +63,14 @@ const Home = (props) => {
          </section>
 
          <section className="testimony-clients section">
-            <p className="presentation-section">Testymononial</p>
-            <h2>What our users say</h2>
+            <p className="presentation-section" data-aos='fade-up' data-aos-duration='1600' data-aos-delay='0'>Testymononial</p>
+            <h2 data-aos='fade-up' data-aos-duration='1800' data-aos-delay='200'>What our users say</h2>
             <Carousel slides={testimonialClients} />
          </section>
 
          <section className="cta section">
             <div className="cta-content">
                <h2>Ready to take your business to the next level?</h2>
-               <p>Sign up now and unlock a world of possibilities!</p>
                <Link to={'/Login'}>
                   <button className="b-get-started">Get Started</button>
                </Link>
@@ -87,10 +86,9 @@ const Home = (props) => {
                </p>
                <form
                   className="contact-form"
-                  autoComplete='off'
                   onSubmit={(e) => e.preventDefault()}
                >
-                  <input placeholder="Your Email" type="email" name="email-input" className="email-input" />
+                  <input placeholder="Your Email" type="email" name="email-input" className="email-input" autoComplete='off' />
                   <textarea placeholder="Your message" className='message-input'></textarea>
                   <button type="button" className="b-send-message">
                      Send Message

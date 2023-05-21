@@ -33,8 +33,9 @@ const Carousel = ({ slides }) => {
             <BsFillArrowLeftCircleFill
                className="carousel-icon-control"
                onClick={goToPrevious}
+               data-aos='fade-right' data-aos-duration='1600' data-aos-delay='0'
             />
-            <div className="carousel-slide">
+            <div className="carousel-slide" data-aos='zoom-in' data-aos-duration='1600' data-aos-delay='300'>
                {slides.map((slide, index) => (
                   <div
                      className={`carousel-item ${
@@ -55,6 +56,7 @@ const Carousel = ({ slides }) => {
             <BsFillArrowRightCircleFill
                className="carousel-icon-control"
                onClick={goToNext}
+               data-aos='fade-left' data-aos-duration='1600' data-aos-delay='0'
             />
          </div>
       </div>

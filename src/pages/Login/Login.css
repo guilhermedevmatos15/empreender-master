@@ -1,0 +1,128 @@
+.Login {
+   width: 100%;
+   min-height: 100vh;
+   padding: 30px 20px;
+   background-color: var(--color-01);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.Login .login-conteiner {
+   width: 100%;
+   min-width: 300px;
+   max-width: 800px;
+   min-height: 400px;
+   background-color: white;
+   border-radius: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   overflow: hidden;
+}
+
+.Login .login-image {
+   width: 50%;
+   min-height: 450px;
+   background-color: rgb(219, 219, 219);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.Login .login-image img {
+   width: 180px;
+}
+
+.Login .login-content {
+   width: 50%;
+   min-height: 100%;
+   padding: 30px 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+.Login .login-content img {
+   width: 110px;
+}
+.Login .login-content h2 {
+   margin-top: 15px;
+   text-align: center;
+   color: #1a2937;
+   font-size: 1.8rem;
+   font-weight: 600;
+   letter-spacing: 0.004rem;
+}
+.Login .login-content form {
+   margin-top: 18px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 12px;
+}
+.Login .login-content form label {
+   width: auto;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+.Login .login-content form label span {
+   /* display: block; */
+   text-align: left;
+   font-size: 0.95rem;
+}
+.Login .login-content form label input {
+   width: 220px;
+   padding: 5px 10px;
+   border: 1px solid rgb(145, 145, 145);
+   border-radius: 5px;
+   font-family: var(--font-default);
+   font-size: 0.8rem;
+   transition: all 0.4s;
+}
+.Login .login-content form label input:hover {
+   box-shadow: 0 0 10px var(--color-04);
+   transition: all 0.4s;
+}
+.Login .login-content form label input:active {
+   transform: scale(90%);
+   transition: all 0.4s;
+}
+.Login .login-content form label input:focus {
+   outline: none;
+   transform: scale(105%);
+   box-shadow: 0 0 10px var(--color-01);
+   transition: all 0.4s;
+}
+.Login .login-content form button {
+   margin-top: 5px;
+   width: 220px;
+   font-size: 0.9rem;
+   padding: 7px 10px;
+}
+.Login .login-conteiner p.login-password-dont {
+   margin-top: 40px;
+   color: rgb(81, 81, 81);
+   font-size: 0.85rem;
+}
+.Login .login-conteiner p.login-password-dont span {
+   cursor: pointer;
+   color: rgb(25, 109, 170);
+}
+
+@media (max-width: 680px) {
+   .Login .login-conteiner {
+      width: 100%;
+      max-width: 360px;
+   }
+   .Login .login-image {
+      display: none;
+   }
+   .Login .login-content {
+      width: 100%;
+   }
+}
