@@ -38,12 +38,14 @@ const Login = (props) => {
          passwordInput === ''
       ) {
          alert('Please fill in the input fields');
+         return;
+      }
+      if (Number(passwordInput) === password) {
+         navigation('/');
+      } else if (username.length < 3) {
+         alert('Username too short');
       } else {
-         if (Number(passwordInput) === password) {
-            navigation('/');
-         } else {
-            alert('Incorrect password');
-         }
+         alert('Incorrect password');
       }
    }
 
