@@ -1,0 +1,194 @@
+.Home {
+   padding-top: 122px;
+}
+
+/* Default section */
+.Home > section {
+   width: 100%;
+   padding: 0 20px;
+   max-width: 1600px;
+   margin: 80px auto 0 auto;
+}
+.Home > section h1 {
+   font-size: 2.8rem;
+   line-height: 3.2rem;
+   font-weight: 600;
+}
+.Home > section h2 {
+   font-size: 2rem;
+   line-height: 2.5rem;
+   font-weight: 500;
+}
+
+/* Individual sections */
+.Home .hero {
+   margin-top: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 300px;
+   text-align: left;
+}
+.Home .image img {
+   width: 300px;
+}
+.Home .hero h1 {
+   background: linear-gradient(45deg, #31beff, #5e50f3);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: gradientAnimation 1s linear infinite;
+}
+.Home .hero p {
+   margin-top: 10px;
+   width: 500px;
+   font-size: 1.1rem;
+   color: rgb(55, 52, 52);
+}
+.Home .hero button {
+   margin-top: 20px;
+}
+
+.Home .resources {
+   margin-top: 200px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.Home .resources .card-conteiner {
+   margin-top: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.Home .testimony-clients {
+   margin-top: 180px;
+   max-width: 1200px;
+}
+.Home .testimony-clients h2 {
+   margin-top: 10px;
+   text-align: center;
+   color: var(--color-02);
+}
+.Home .testimony-clients p.presentation-section {
+   font-size: 1.1rem;
+   font-weight: 400;
+   color: rgb(55, 54, 54);
+   text-align: center;
+}
+
+.Home .cta {
+   margin-top: 120px;
+   width: 100%;
+   max-width: auto;
+   padding: 30px 20px;
+   text-align: center;
+   background-color: var(--color-01);
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.Home .cta h2 {
+   font-size: 1.7rem;
+   line-height: 2.2rem;
+   font-weight: 600;
+}
+.Home .cta p {
+   margin-top: 5px;
+   font-size: 1rem;
+   font-weight: 300;
+   line-height: 1.5rem;
+}
+.Home .cta button {
+   margin-top: 10px;
+}
+
+.Home .contact {
+   width: auto;
+   padding: 0 30px;
+   margin-top: 180px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.Home .contact form {
+   width: auto;
+   max-width: 500px;
+   margin: 20px auto 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 6px;
+}
+.Home .contact .email-input, .Home .contact .message-input {
+   width: 100%;
+   max-width: 220px;
+   height: 45px;
+   padding: 12px;
+   font-family: var(--font-default);
+   border-radius: 12px;
+   border: 1.5px solid lightgrey;
+   outline: none;
+   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+   box-shadow: 0px 0px 20px -18px;
+   transition: all .4s;
+}
+.Home .contact .email-input:hover, Home .contact .message-input:hover {
+   /* border: 2px solid var(--color-02); */
+   box-shadow: 0px 0px 10px var(--color-02);
+   transition: all .4s;
+}
+.Home .contact .email-input:active, Home .contact .message-input:active {
+   transform: scale(0.95);
+   transition: all .4s;
+}
+.Home .contact .email-input:focus, Home .contact .message-input:focus {
+   box-shadow: 0px 0px 10px var(--color-02);
+   transition: all .4s;
+}
+.Home .contact .message-input {
+   height: 100px;
+   resize: none;
+}
+.Home .contact button {
+   width: 100%; max-width: 220px;
+   margin-top: 10px;
+}
+
+
+
+/* Hero section responsive */
+@media (max-width: 1150px) {
+   .Home .hero {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+   }
+   .Home .hero p {
+      margin: 10px 0 0 0;
+      width: auto; min-width: 0px; max-width: 500px;
+      text-align: center;
+   }
+   .Home .hero .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+   }
+   .Home .hero .image {
+      display: none;
+   }
+}
+
+
+/* testimonial section responsive */

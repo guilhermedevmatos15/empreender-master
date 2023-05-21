@@ -1,0 +1,40 @@
+.ClientCard {
+   width: auto; max-width: 500px;
+   padding: 30px 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.ClientCard img {
+   width: 90px;
+   border-radius: 50%;
+}
+
+.ClientCard .client-text {
+   margin-top: 10px;
+   font-size: 1rem;
+   font-weight: 400;
+   color: rgb(22, 21, 21);
+   text-align: center;
+}
+
+.ClientCard .client-name {
+   margin-top: 10px;
+   font-size: 1.2rem;
+   font-weight: 500;
+   color: var(--color-text-dark);
+   text-align: center;
+}
+
+/* Woman card */
+.ClientCard.F img {
+   box-shadow: 0 0 20px #ff41e9;
+}
+
+/* Man card */
+.ClientCard.M img {
+   box-shadow: 0 0 20px #003ea1;
+}

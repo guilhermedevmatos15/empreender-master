@@ -1,0 +1,37 @@
+.SmallCard {
+   max-width: 300px;
+   height: auto; min-height: 100px; max-height: 250px;
+   color: white;
+   padding: 20px 30px;
+   background-color: rgb(160, 208, 255);
+   color: black;
+   backdrop-filter: blur(10px);
+   border-radius: 20px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   transition: all .4s;
+}
+.SmallCard:hover {
+   transform: translateY(-5px);
+   transform: scale(103%);
+   background-color: var(--color-02);
+   color: white;
+   transition: all .4s;
+}
+
+.SmallCard * {
+   cursor: default;
+}
+
+.SmallCard h3 {
+   font-size: 1.3rem;
+   font-weight: 500;
+}
+.SmallCard p {
+   font-size: 0.9rem;
+   font-weight: 400;
+}

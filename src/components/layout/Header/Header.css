@@ -1,0 +1,41 @@
+.Header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 5;
+   width: 100%;
+   padding: 20px 0;
+   backdrop-filter: blur(5px);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.Header img {
+   width: 120px;
+   cursor: pointer;
+}
+
+.Header .menu-icon {
+   display: none;
+}
+
+
+@media (max-width: 935px) {
+   .Header {
+      justify-content: space-between;
+      padding: 20px 50px;
+   }
+   .Header > .Navigator {
+      display: none;
+   }
+   .Header .menu-icon {
+      display: inline;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: all .4s;
+   }
+   .Header .menu-icon:hover {
+      color: var(--color-02);
+   }
+}

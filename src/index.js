@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './tests/reportWebVitals';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
 // ? Components
 import App from './App';
 import NotFound from './pages/NotFound/NotFound';
@@ -11,9 +10,11 @@ import Home from './pages/Home/Home';
 
 // ? CSS
 import './index.css';
+import './styles/buttons.css';
 
 // ? Libs
 import initSmoothScroll from './libs/smoothScroll';
+import Login from './pages/Login/Login';
 
 document.addEventListener('DOMContentLoaded', function () {
    setTimeout(() => {
@@ -31,6 +32,10 @@ const Router = createBrowserRouter([
          {
             path: '/',
             element: <Home />,
+         },
+         {
+            path: '/Login',
+            element: <Login />,
          },
       ],
    },

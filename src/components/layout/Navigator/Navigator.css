@@ -1,0 +1,38 @@
+.Navigator {
+   width: auto;
+   height: auto;
+   justify-content: center;
+   align-items: center;
+}
+
+.Navigator ul {
+   list-style: none;
+}
+
+.Navigator li, .Navigator li a {
+   text-decoration: none;
+   cursor: pointer;
+   transition: all .4s;
+}
+
+.Navigator li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Theme light */
+.Navigator ul.Light li, .Navigator ul.Light li a {
+   color: #0a0a0a;
+}
+.Navigator ul.Light li:hover, .Navigator ul.Light li a:hover {
+   color: var(--color-02);
+}
+
+/* Theme dark */
+.Navigator ul.Dark li, .Navigator ul.Dark li a {
+   color: #faf6f6;
+}
+.Navigator ul.Dark li:hover, .Navigator ul.Dark li a:hover {
+   color: var(--color-03);
+}

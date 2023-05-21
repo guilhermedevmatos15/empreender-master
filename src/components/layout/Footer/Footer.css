@@ -1,0 +1,31 @@
+footer {
+   margin-top: 160px;
+   width: 100%;
+   height: auto;
+   padding: 40px 20px 40px 20px;
+   background-color: var(--color-01);
+   background-color: rgb(15, 15, 15);
+   color: white;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+}
+
+footer img {
+   width: 120px;
+}
+
+footer a {
+   color: var(--color-02);
+   cursor: pointer;
+   transition: all 0.4s;
+}
+
+footer a:hover {
+   color: var(--color-04);
+   cursor: pointer;
+   transition: all 0.4s;
+}

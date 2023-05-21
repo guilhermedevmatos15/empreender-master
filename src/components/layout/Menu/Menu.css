@@ -1,0 +1,39 @@
+.Menu {
+   width: 100%;
+   min-height: 100vh;
+   /* overflow-y: auto; */
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   backdrop-filter: blur(10px);
+   background-color: rgba(0, 0, 0, 0.885);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all .4s;
+}
+
+.Menu.disable {
+   top: -100vh;
+   transition: all .4s;
+}
+
+.Menu .icon-close {
+   position: absolute;
+   top: 30px;
+   right: 30px;
+   color: white;
+   font-size: 2.5rem;
+   cursor: pointer;
+   transition: all .4s;
+}
+.Menu .icon-close:hover {
+   color: var(--color-02);
+   cursor: pointer;
+   transition: all .4s;
+}
+
+.Menu .Navigator li {
+   font-size: 1.3rem;
+}

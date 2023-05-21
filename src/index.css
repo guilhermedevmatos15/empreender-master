@@ -6,6 +6,8 @@
    --color-03: #3EB0F7;
    --color-04: #71C2F9;
    --color-05: #A1D7FB;
+   
+   --color-text-dark: #0d0d0e;
 
    --font-default: 'Poppins', Arial, sans-serif;
 }
@@ -23,4 +25,9 @@ body, .root {
 
 body {
    font-family: var(--font-default);
+}
+
+/* temp */
+img {
+   width: 100px;
 }
