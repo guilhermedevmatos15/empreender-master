@@ -1,0 +1,42 @@
+input, select {
+   width: 220px;
+   padding: 5px 10px;
+   border: 1px solid rgb(145, 145, 145);
+   border-radius: 5px;
+   font-family: var(--font-default);
+   font-size: 0.8rem;
+   transition: all 0.4s;
+}
+input:hover, select:hover {
+   box-shadow: 0 0 10px var(--color-04);
+   transition: all 0.4s;
+}
+input:active, select:active {
+   transform: scale(90%);
+   transition: all 0.4s;
+}
+input:focus, select:focus {
+   outline: none;
+   transform: scale(105%);
+   box-shadow: 0 0 10px var(--color-01);
+   transition: all 0.4s;
+}
+
+select:focus {
+   transform: scale(100%);
+}
+
+
+label {
+   width: auto;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+label span {
+   /* display: block; */
+   text-align: left;
+   font-size: 0.95rem;
+}

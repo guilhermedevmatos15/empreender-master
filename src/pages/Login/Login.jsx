@@ -30,6 +30,12 @@ const Login = (props) => {
       setPassword(Number(getRandomIntInclusive(100, 1000)));
    }, []);
 
+   useEffect(() => {
+      if (localStorage.getItem('username')) {
+         navigation('/Employees');
+      }
+   }, []);
+
    function handleClickLogin(e) {
       if (
          username === null ||
@@ -41,7 +47,8 @@ const Login = (props) => {
          return;
       }
       if (Number(passwordInput) === password) {
-         navigation('/');
+         localStorage.setItem('username', username);
+         navigation('/Employees');
       } else if (username.length < 3) {
          alert('Username too short');
       } else {

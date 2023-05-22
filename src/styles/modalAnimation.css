@@ -1,0 +1,15 @@
+.modal {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 15;
+   opacity: 1;
+   transition: all .5s;
+}
+
+.modal.disable {
+   opacity: 0;
+   top: -100vh;
+   transition: all 1s;
+}

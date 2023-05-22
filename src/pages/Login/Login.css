@@ -62,42 +62,8 @@
    align-items: center;
    gap: 12px;
 }
-.Login .login-content form label {
-   width: auto;
-   margin: auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-start;
-}
-.Login .login-content form label span {
-   /* display: block; */
-   text-align: left;
-   font-size: 0.95rem;
-}
-.Login .login-content form label input {
-   width: 220px;
-   padding: 5px 10px;
-   border: 1px solid rgb(145, 145, 145);
-   border-radius: 5px;
-   font-family: var(--font-default);
-   font-size: 0.8rem;
-   transition: all 0.4s;
-}
-.Login .login-content form label input:hover {
-   box-shadow: 0 0 10px var(--color-04);
-   transition: all 0.4s;
-}
-.Login .login-content form label input:active {
-   transform: scale(90%);
-   transition: all 0.4s;
-}
-.Login .login-content form label input:focus {
-   outline: none;
-   transform: scale(105%);
-   box-shadow: 0 0 10px var(--color-01);
-   transition: all 0.4s;
-}
+
+
 .Login .login-content form button {
    margin-top: 5px;
    width: 220px;
