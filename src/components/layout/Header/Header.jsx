@@ -16,6 +16,7 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 import Menu from '../Menu/Menu';
 
 const Header = (props) => {
+   const { username } = props;
    const [openMenu, setOpenMenu] = useState(false);
 
    return (
@@ -24,7 +25,7 @@ const Header = (props) => {
             <img src={Logo} alt="Logo Empreender Master" />
          </Link>
 
-         <Navigator direction="row" gap={30} theme="Light" />
+         <Navigator direction="row" gap={30} theme="Light" username={username} />
 
          <RxHamburgerMenu
             className="menu-icon"

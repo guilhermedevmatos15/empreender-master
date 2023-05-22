@@ -1,0 +1,52 @@
+.ModalEdit {
+   width: 90%; min-width: 300px; max-width: 500px;
+   min-height: 500px;
+   padding: 40px 20px;
+   backdrop-filter: blur(10px);
+   background-color: rgba(2, 24, 188, 0.788);
+   color: white;
+   border-radius: 20px;
+   box-shadow: 0 0 30px rgba(0, 0, 0, 0.699);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.ModalEdit .icon-close {
+   position: absolute;
+   top: 30px;
+   right: 30px;
+   color: black;
+   font-size: 2.2rem;
+   cursor: pointer;
+   transition: all .4s;
+}
+.ModalEdit .icon-close:hover {
+   color: rgb(191, 56, 56);
+   cursor: pointer;
+   transition: all .4s;
+}
+
+
+.ModalEdit h2 {
+   font-weight: 600;
+   font-size: 1.7rem;
+}
+
+.ModalEdit form {
+   margin-top: 10px;
+}
+.ModalEdit label {
+   margin-top: 10px;
+}
+.ModalEdit button {
+   margin-top: 15px;
+   background-color: white;
+   color: #0066ff;
+   border: 1px solid #0066ff;
+}
+.ModalEdit button:hover {
+   background-color: rgb(168, 214, 255);
+   border: 1px solid transparent;
+}

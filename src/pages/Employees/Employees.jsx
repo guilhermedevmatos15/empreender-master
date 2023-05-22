@@ -3,7 +3,9 @@ import { Link, useNavigate } from 'react-router-dom';
 
 // * Components
 import Header from '../../components/layout/Header/Header';
+import Table from '../../components/layout/Table/Table';
 import ModalAdd from '../../components/Modals/ModalAdd/ModalAdd';
+import ModalEdit from '../../components/Modals/ModalEdit/ModalEdit';
 
 // * CSS
 import './Employees.css';
@@ -12,15 +14,17 @@ import './Employees.css';
 
 // * Icons
 import { BsFillTrashFill } from 'react-icons/bs';
-import Table from '../../components/layout/Table/Table';
+import { AiFillEdit } from 'react-icons/ai';
 
 const Employees = (props) => {
    const navigation = useNavigate();
 
    const [username, setUsername] = useState(null);
-   const [openModalAdd, setOpenModalAdd] = useState(false);
    const [employees, setEmployees] = useState([]);
    const [currentId, setCurrentId] = useState(1);
+   const [openModalAdd, setOpenModalAdd] = useState(false);
+   const [openModalEdit, setOpenModalEdit] = useState(false);
+   const [employeeEdit, setEmployeeEdit] = useState(null);
 
    // ? Things to do when page loads
    useEffect(() => {
@@ -49,11 +53,14 @@ const Employees = (props) => {
       localStorage.setItem('employees', JSON.stringify(employees));
    }, [employees]);
 
+   function editTask(id) {
+      setOpenModalEdit(true);
+      setEmployeeEdit(id);
+   }
 
-
-   function deleteEmployee(employeeName) {
+   function deleteEmployee(id) {
       const newEmployees = employees.filter((employee) => {
-         return employee.name !== employeeName;
+         return employee.id !== id;
       });
 
       return newEmployees;
@@ -72,7 +79,7 @@ const Employees = (props) => {
 
    return (
       <div className="Employees">
-         <Header />
+         <Header username={username} />
 
          <div className="presentation">
             <h2>Employees</h2>
@@ -110,9 +117,16 @@ const Employees = (props) => {
                         </td>
                         <td className="action-buttons">
                            <button
+                              className="b-edit"
+                              onClick={(e) => editTask(employee.id)}
+                           >
+                              <AiFillEdit className="employee-button-icon" />{' '}
+                              Edit
+                           </button>
+                           <button
                               className="b-delete"
                               onClick={(e) => {
-                                 setEmployees(deleteEmployee(employee.name));
+                                 setEmployees(deleteEmployee(employee.id));
                               }}
                            >
                               <BsFillTrashFill className="employee-button-icon" />{' '}
@@ -132,6 +146,17 @@ const Employees = (props) => {
             setEmployees={setEmployees}
             currentId={currentId}
             setCurrentId={setCurrentId}
+         />
+         <ModalEdit
+            open={openModalEdit}
+            setOpen={setOpenModalEdit}
+            employees={employees}
+            setEmployees={setEmployees}
+            // currentId={currentId}
+            // setCurrentId={setCurrentId}
+            employeeEdit={employeeEdit}
+            setEmployeeEdit={setEmployeeEdit}
+            deleteEmployee={deleteEmployee}
          />
       </div>
    );

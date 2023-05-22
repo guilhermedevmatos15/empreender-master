@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // * Components
@@ -19,9 +19,11 @@ import Illustration from '../../assets/img/Illustrations/undraw_add_user_re_5oib
 // * Icons
 
 const Home = (props) => {
+   const username = localStorage.getItem('username');
+
    return (
       <div className="Home">
-         <Header />
+         <Header username={username} />
 
          <section className="hero section">
             <div className="content">

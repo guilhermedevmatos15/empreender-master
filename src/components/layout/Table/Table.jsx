@@ -16,9 +16,9 @@ const Table = (props) => {
       <table className="Table">
          <thead>
             <tr>
-               {tableDataHead.map((data) => {
+               {tableDataHead.map((data, index) => {
                   return (
-                     <th>{data}</th>
+                     <th key={`${data}_${index}`}>{data}</th>
                   )
                })}
             </tr>
