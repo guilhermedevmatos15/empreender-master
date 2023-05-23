@@ -25,7 +25,7 @@ const Header = (props) => {
             <img src={Logo} alt="Logo Empreender Master" />
          </Link>
 
-         <Navigator direction="row" gap={30} theme="Light" username={username} />
+         <Navigator direction="row" gap='30px' theme="Light" username={username} />
 
          <RxHamburgerMenu
             className="menu-icon"

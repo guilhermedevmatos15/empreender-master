@@ -3,20 +3,20 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './tests/reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-// ? Components
+// * Components
 import App from './App';
 import NotFound from './pages/NotFound/NotFound';
 import Home from './pages/Home/Home';
 import Employees from './pages/Employees/Employees';
 import Employee from './pages/Employee/Employee';
 
-// ? CSS
+// * CSS
 import './index.css';
 import './styles/buttons.css';
 import './styles/inputs.css';
 import './styles/modalAnimation.css';
 
-// ? Libs
+// * Libs
 import initSmoothScroll from './libs/smoothScroll';
 import Login from './pages/Login/Login';
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
    }, 500);
 });
 
-// ? React Router
+// * React Router
 const Router = createBrowserRouter([
    {
       path: '/',
