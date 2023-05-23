@@ -1,16 +1,17 @@
-# EmpreenderMaster
+# Empreender Master
 
 Bem-vindo ao EmpreenderMaster, a plataforma online para administradores de empresas otimizarem suas tarefas diárias e gerenciarem eficientemente sua equipe.
 
 ## Visão Geral
 
-O EmpreenderMaster é um projeto desenvolvido com o objetivo de fornecer recursos essenciais para administradores de empresas. Nossa plataforma oferece uma variedade de funcionalidades, incluindo:
+O EmpreenderMaster é um projeto desenvolvido em React, apenas por mim, com objetivo de praticar habilidades desenvolvidas durante o apredizado, e principalmente salvar dados no localStorage, fazendo assim um CRUD no front-end... Um resumo das features da aplicação:
 
 - Lista de Funcionários: Organize e gerencie informações sobre os funcionários de sua empresa. Adicione detalhes como nome, cargo, contato e outras informações relevantes.
 - Todo-List do Administrador: Uma seção dedicada para que você anote suas tarefas diárias e mantenha-se organizado.
 - Artigos e dicas sobre liderança, gestão e estratégias empresariais.
 
-Acreditamos que o sucesso na administração de empresas é alcançado através do gerenciamento eficiente de tarefas e do cuidado com sua equipe. Com o EmpreenderMaster, você terá acesso a recursos valiosos para otimizar suas tarefas diárias, gerenciar sua equipe de forma eficaz e fortalecer suas habilidades de liderança.
+<br>
+O início do projeto foi dia
 
 ## Commits
 
