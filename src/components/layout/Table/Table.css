@@ -4,21 +4,22 @@
    border-collapse: collapse;
 }
 .Table thead {
-   background-color: rgb(194, 194, 194);
-   color: var(--color-text-dark);
+   background-color: rgb(35, 134, 255);
+   color: white;
+}
+.Table thead th {
+   font-weight: 500;
 }
 
-
-/* Table and TableData styles */
 .Table th, .Table td:not(.action-buttons) {
    width: calc(auto + 20px); min-width: 80px; max-width: 130px;
    border: 1px solid black;
    padding: 5px 10px;
    text-align: center;
-
    white-space: nowrap;
    overflow-x: auto;
 }
 .Table a {
    color: var(--color-text-dark);
+   transition: all .4s;
 }

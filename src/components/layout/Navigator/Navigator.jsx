@@ -58,11 +58,6 @@ const Navigator = (props) => {
                </Link>
             </li>
             <li>
-               <Link to={'/Profile'}>
-                  <span>Profile</span>
-               </Link>
-            </li>
-            <li>
                {username ? (
                   <button className="b-login" type="button" onClick={e => handleClickLogOut()}>Log Out</button>
                ) : (

@@ -15,6 +15,7 @@ import './Employees.css';
 // * Icons
 import { BsFillTrashFill } from 'react-icons/bs';
 import { AiFillEdit } from 'react-icons/ai';
+import { GoPlus } from "react-icons/go";
 
 const Employees = (props) => {
    const navigation = useNavigate();
@@ -93,7 +94,7 @@ const Employees = (props) => {
                className="b-add-employee"
                onClick={(e) => setOpenModalAdd(true)}
             >
-               Add Employee
+               <GoPlus />Add
             </button>
             <Table tableDataHead={tableDataHead}>
                {employees.map((employee, index) => {
@@ -101,6 +102,7 @@ const Employees = (props) => {
                      <tr
                         key={employee.name + ' ' + index}
                         className="employee-row"
+                        onClick={e => {console.log('cliquei')}}
                      >
                         <td>
                            <Link to={'/Employees/' + employee.name}>

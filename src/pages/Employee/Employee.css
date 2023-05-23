@@ -1,0 +1,140 @@
+.Employee {
+   padding-top: 123px;
+   padding: 123px 0 30px 0;
+}
+
+.Employee .presentation {
+   width: 100%;
+   padding: 20px 0;
+   background-color: rgb(111, 0, 255);
+   color: white;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.Employee .presentation h2 {
+   font-weight: 400;
+   font-size: 1.4rem;
+}
+.Employee .presentation h2 span {
+   font-weight: 600;
+   font-size: 1.5rem;
+}
+
+.Employee h1 {
+   margin-bottom: 5px;
+   text-align: center;
+   font-weight: 600;
+}
+.Employee hr {
+   margin: 0 auto 20px auto;
+   width: 90%;
+   border-radius: 10px;
+}
+.Employee .employee-informations, .Employee .search-employee {
+   width: 100%; min-width: 300px; max-width: 500px;
+   margin: 25px auto 0 auto;
+   padding: 20px;
+   border-radius: 20px;
+   background-color: #5315ff;
+   color: white;
+}
+.Employee .employee-informations .row-information {
+   margin-top: 10px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 50px;
+}
+.Employee .employee-informations .row-information > div {
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   text-align: left;
+}
+.Employee .employee-informations .row-information > div :first-child {
+   font-size: 0.9rem;
+}
+.Employee .employee-informations .row-information > div :last-child {
+   font-size: 1.05rem;
+   padding: 5px 8px;
+   background-color: rgba(0, 0, 0, 0.162);
+   border-radius: 10px;
+}
+
+.Employee .employee-informations .row-information.row-only {
+   margin-top: 20px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.Employee .employee-informations .row-information.row-only > div {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Status color */
+.Employee .information.status.active {
+   color: #02af02;
+}
+.Employee .information.status.inactive {
+   color: #a2a200;
+}
+.Employee .information.status.suspended {
+   color: #ff8787;
+}
+.Employee .information.status.terminated {
+   color: #ff0000;
+}
+
+
+
+.Employee .search-employee {
+   padding: 50px 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+.Employee .search-employee .icon-load {
+   font-size: 3rem;
+   animation: loading 2s infinite;
+}
+@keyframes loading {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(-10px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}
+
+
+
+
+@media (max-width: 550px){
+   .Employee .presentation {
+      padding: 20px 20px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+   }
+}
+@media (max-width: 450px) {
+   .Employee .employee-informations .row-information {
+      gap: 80px;
+   }
+}

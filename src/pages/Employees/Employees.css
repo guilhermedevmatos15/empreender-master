@@ -35,7 +35,13 @@
    padding: 0 20px;
    overflow-x: auto;
 }
-
+.Employees .employees-app button {
+   background-color: #28c628;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
 
 .Employees td.action-buttons {
    border: 1px solid rgb(0, 0, 0);
@@ -51,6 +57,14 @@
    justify-content: center;
    align-items: center;
    gap: 5px;
+}
+
+.Employees .employee-row {
+   background-color: #fff;
+   transition: all .4s;
+}
+.Employees .employee-row:nth-child(even) {
+   background-color: #d5d5d5;
 }
 
 /* Status */
