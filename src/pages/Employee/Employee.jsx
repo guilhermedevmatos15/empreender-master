@@ -50,11 +50,9 @@ const Employee = (props) => {
       }
    }, [employeeName]);
 
-   const username = localStorage.getItem('username');
-
    return (
       <div className="Employee">
-         <Header username={username} />
+         <Header />
 
          {employeeRender !== null ? (
             <>

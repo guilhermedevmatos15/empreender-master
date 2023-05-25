@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +12,16 @@ import './Navigator.css';
 // * Icons
 
 const Navigator = (props) => {
-   const { direction, gap, theme, username } = props;
+   const { direction, gap, theme } = props;
+
+   const [username, setUsername] = useState(null);
+
+   useEffect(() => {
+      const user = localStorage.getItem('username');
+      if (user) {
+         setUsername(user);
+      }
+   }, []);
 
    function handleClickLogOut() {
       const response = window.confirm('Do you really want to unlogin?');
@@ -45,11 +54,6 @@ const Navigator = (props) => {
             <li>
                <Link to={'/Tasks'}>
                   <span>Tasks</span>
-               </Link>
-            </li>
-            <li>
-               <Link to={'/Blog'}>
-                  <span>Blog</span>
                </Link>
             </li>
             <li>

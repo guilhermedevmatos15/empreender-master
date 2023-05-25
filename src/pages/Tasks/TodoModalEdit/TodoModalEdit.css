@@ -1,0 +1,45 @@
+.TodoModalEdit {
+   width: 100%; min-width: 300px; max-width: 320px;
+   padding: 30px 20px;
+   border-radius: 20px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.657);
+   background-color: var(--color-01);
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+}
+
+.TodoModalEdit .icon-xmark {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   font-size: 1.5rem;
+   color: black;
+   cursor: pointer;
+   transition: all .4s;
+}
+.TodoModalEdit .icon-xmark:hover {
+   transition: all .4s;
+   cursor: pointer;
+   color: rgba(231, 0, 0, 0.985);
+}
+
+.TodoModalEdit h2 {
+   font-weight: 600;
+}
+
+.TodoModalEdit .task-name {
+   max-width: 200px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.TodoModalEdit button {
+   background-color: blue;
+}
+.TodoModalEdit button:hover {
+   background-color: rgb(47, 47, 255);
+}

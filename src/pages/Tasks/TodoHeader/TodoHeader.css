@@ -1,0 +1,59 @@
+.TodoHeader {
+   width: 100%; max-width: 270px;
+   padding: 10px 0;
+}
+
+.TodoHeader .todo-presentation {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 0;
+}
+.TodoHeader .todo-presentation h2 {
+   font-size: 1.8rem;
+   color: #ffffff;
+   font-weight: 600;
+}
+.TodoHeader .todo-presentation .date-data {
+   font-size: 0.85rem;
+   color: #ffffff9d;
+}
+.TodoHeader .todo-presentation .icon-container {
+   width: 40px;
+   height: 40px;
+   padding: 8px;
+   border-radius: 50%;
+   background-color: var(--color-01);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.TodoHeader .todo-presentation .icon-user {
+   font-size: 1.5rem;
+}
+
+.TodoHeader form {
+   margin-top: 15px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+.TodoHeader input {
+   max-width: 220px;
+   height: 35px;
+}
+.TodoHeader button {
+   padding: 5px 10px;
+   height: 35px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.TodoHeader hr {
+   margin-top: 10px;
+   width: 100%;
+   border-radius: 20px;
+}

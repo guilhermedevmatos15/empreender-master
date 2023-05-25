@@ -8,27 +8,6 @@
    align-items: center;
 }
 
-.Employees .presentation {
-   width: 100%;
-   padding: 15px 100px;
-   background-color: rgb(0, 98, 255);
-   color: white;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-.Employees .presentation p {
-   font-size: 1rem;
-}
-.Employees .presentation p {
-   font-weight: 400;
-   font-size: 1.05rem;
-}
-.Employees .presentation .username {
-   font-weight: 600;
-   /* font-size: 1.05rem; */
-}
-
 .Employees .employees-app {
    max-width: 100%;
    margin-top: 20px;
@@ -82,24 +61,4 @@
 }
 .Employees .employee-status.terminated {
    color: #ff0000cb;
-}
-
-
-
-
-
-
-
-
-@media (max-width: 540px) {
-   .Employees .presentation {
-      padding: 15px 20px;
-      justify-content: space-between;
-   }
-}
-@media (max-width: 540px) {
-   .Employees .presentation {
-      flex-direction: column;
-      gap: 5px;
-   }
 }

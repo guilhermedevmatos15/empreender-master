@@ -1,0 +1,65 @@
+.TodoItem {
+   width: 100%;
+   padding: 5px 8px 5px 10px;
+   display: flex;
+   background-color: white;
+   border-radius: 10px;
+   color: black;
+   justify-content: space-between;
+   align-items: center;
+   transition: all .4s;
+}
+.TodoItem.completed {
+   text-decoration: line-through;
+   background-color: rgb(57, 39, 255);
+   color: #ffffffa1;
+   transition: all .4s;
+}
+
+.TodoItem .todoItem-infos {
+   width: 80%; max-width: 180px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 5px;
+   overflow-x: auto;
+}
+.TodoItem .todoItem-infos .icon-box {
+   font-size: 1.3rem;
+   cursor: pointer;
+}
+.TodoItem .task-name {
+   white-space: nowrap;
+   cursor: pointer;
+}
+
+.TodoItem .todo-buttons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+.TodoItem button {
+   padding: 10px 13px;
+   font-size: 1rem;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.TodoItem .b-todo-edit {
+   background-color: rgb(67, 67, 67);
+   color: #ffba3a;
+}
+.TodoItem .b-todo-edit:hover {
+   background-color: rgb(49, 49, 49);
+   transform: scale(103%);
+}
+.TodoItem .b-todo-trash {
+   background-color: rgb(67, 67, 67);
+   color: #ff3a3a;
+}
+.TodoItem .b-todo-trash:hover {
+   background-color: rgb(49, 49, 49);
+   transform: scale(103%);
+}

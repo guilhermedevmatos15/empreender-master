@@ -1,0 +1,25 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+// * Components
+
+// * CSS
+import './Component.css';
+
+// * Images
+
+// * Icons
+
+const Component = ({}) => {
+   return (
+      <div className="Component">
+         
+      </div>
+   );
+};
+
+Component.propTypes = {
+   prop: PropTypes,
+};
+
+export default Component;

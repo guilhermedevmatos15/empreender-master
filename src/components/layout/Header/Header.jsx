@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // * Components
@@ -16,7 +16,6 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 import Menu from '../Menu/Menu';
 
 const Header = (props) => {
-   const { username } = props;
    const [openMenu, setOpenMenu] = useState(false);
 
    return (
@@ -25,7 +24,7 @@ const Header = (props) => {
             <img src={Logo} alt="Logo Empreender Master" />
          </Link>
 
-         <Navigator direction="row" gap='30px' theme="Light" username={username} />
+         <Navigator direction="row" gap='30px' theme="Light" />
 
          <RxHamburgerMenu
             className="menu-icon"

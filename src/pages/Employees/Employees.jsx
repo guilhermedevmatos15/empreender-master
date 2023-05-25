@@ -3,9 +3,10 @@ import { Link, useNavigate } from 'react-router-dom';
 
 // * Components
 import Header from '../../components/layout/Header/Header';
+import PresentationPage from '../../components/layout/Presentation/Presentation';
 import Table from '../../components/layout/Table/Table';
-import ModalAdd from '../../components/Modals/ModalAdd/ModalAdd';
-import ModalEdit from '../../components/Modals/ModalEdit/ModalEdit';
+import ModalAdd from './ModalAdd/ModalAdd';
+import ModalEdit from './ModalEdit/ModalEdit';
 
 // * CSS
 import './Employees.css';
@@ -20,7 +21,6 @@ import { GoPlus } from "react-icons/go";
 const Employees = (props) => {
    const navigation = useNavigate();
 
-   const [username, setUsername] = useState(null);
    const [employees, setEmployees] = useState([]);
    const [currentId, setCurrentId] = useState(1);
    const [openModalAdd, setOpenModalAdd] = useState(false);
@@ -31,8 +31,6 @@ const Employees = (props) => {
    useEffect(() => {
       if (!localStorage.getItem('username')) {
          navigation('/Login');
-      } else {
-         setUsername(localStorage.getItem('username'));
       }
 
       // we test if we have data stored in LocalStorage, if we have we assign the data directly they are rendered, if we don't have data we simply do nothing
@@ -54,6 +52,8 @@ const Employees = (props) => {
       localStorage.setItem('employees', JSON.stringify(employees));
    }, [employees]);
 
+
+
    function editTask(id) {
       setOpenModalEdit(true);
       setEmployeeEdit(id);
@@ -67,6 +67,7 @@ const Employees = (props) => {
       return newEmployees;
    }
 
+   
    const tableDataHead = [
       'Name',
       'Age',
@@ -80,14 +81,9 @@ const Employees = (props) => {
 
    return (
       <div className="Employees">
-         <Header username={username} />
+         <Header />
 
-         <div className="presentation">
-            <h2>Employees</h2>
-            <p>
-               Welcome, <span className="username">{username}</span>
-            </p>
-         </div>
+         <PresentationPage page='Employees' />
 
          <div className="employees-app">
             <button

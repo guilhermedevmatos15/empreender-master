@@ -118,7 +118,7 @@ const ModalEdit = (props) => {
    }
 
    return (
-      <div className={`ModalEdit modal ${open ? 'open' : 'disable'}`}>
+      <div className={`ModalEdit modal-animate ${open ? 'open' : 'disable'}`}>
          <HiXMark
             className="icon-close"
             onClick={(e) => {

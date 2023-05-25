@@ -7,8 +7,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import NotFound from './pages/NotFound/NotFound';
 import Home from './pages/Home/Home';
+import Login from './pages/Login/Login';
 import Employees from './pages/Employees/Employees';
 import Employee from './pages/Employee/Employee';
+import Tasks from './pages/Tasks/Tasks';
 
 // * CSS
 import './index.css';
@@ -18,7 +20,6 @@ import './styles/modalAnimation.css';
 
 // * Libs
 import initSmoothScroll from './libs/smoothScroll';
-import Login from './pages/Login/Login';
 
 document.addEventListener('DOMContentLoaded', function () {
    setTimeout(() => {
@@ -48,6 +49,10 @@ const Router = createBrowserRouter([
          {
             path: '/Employees/:employeeName',
             element: <Employee />,
+         },
+         {
+            path: '/Tasks',
+            element: <Tasks />,
          },
       ],
    },

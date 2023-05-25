@@ -82,7 +82,7 @@ const ModalAdd = (props) => {
    }
 
    return (
-      <div className={`ModalAdd modal ${open ? 'open' : 'disable'}`}>
+      <div className={`ModalAdd modal-animate ${open ? 'open' : 'disable'}`}>
          <HiXMark className="icon-close" onClick={(e) => setOpen(false)} />
 
          <h2>Add Employee</h2>
