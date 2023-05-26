@@ -1,5 +1,5 @@
 .TodoHeader {
-   width: 100%; max-width: 270px;
+   width: 100%; max-width: 285px;
    padding: 10px 0;
 }
 
@@ -14,6 +14,11 @@
    font-size: 1.8rem;
    color: #ffffff;
    font-weight: 600;
+}
+.TodoHeader .todo-presentation h2 span {
+   max-width: 150px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
 }
 .TodoHeader .todo-presentation .date-data {
    font-size: 0.85rem;

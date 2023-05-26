@@ -26,7 +26,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 300px;
+   gap: 150px;
    text-align: left;
 }
 .Home .image img {
@@ -110,6 +110,9 @@
    display: flex;
    justify-content: center;
    align-items: center;
+}
+.Home .contact p {
+   max-width: 500px;
 }
 .Home .contact form {
    width: auto;

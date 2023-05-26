@@ -11,6 +11,7 @@ import Login from './pages/Login/Login';
 import Employees from './pages/Employees/Employees';
 import Employee from './pages/Employee/Employee';
 import Tasks from './pages/Tasks/Tasks';
+import About from './pages/About/About';
 
 // * CSS
 import './index.css';
@@ -54,6 +55,10 @@ const Router = createBrowserRouter([
             path: '/Tasks',
             element: <Tasks />,
          },
+         {
+            path: '/About',
+            element: <About />
+         }
       ],
    },
 ]);

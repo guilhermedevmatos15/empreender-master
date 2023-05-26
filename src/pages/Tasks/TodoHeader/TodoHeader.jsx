@@ -67,7 +67,7 @@ const TodoHeader = ({setTodos}) => {
          <div className='todo-presentation'>
             <div>
                <h2>
-                  Hey, <span>{username}</span>
+                  Hey, <span>{String(username).split(' ')[0]}</span>
                </h2>
                <p className="date-data">{`${date.day} ${date.month} ${date.year}   ${date.hours}:${date.minutes}`}</p>
             </div>

@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// * Components
+// * components
 
 // * CSS
 import './Component.css';
 
-// * Images
+// * scripts
 
-// * Icons
+// * img
 
-const Component = ({}) => {
+// * icons
+
+const Component = ({ children }) => {
    return (
       <div className="Component">
          

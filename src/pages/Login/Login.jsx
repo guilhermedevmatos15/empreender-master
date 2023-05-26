@@ -45,7 +45,11 @@ const Login = (props) => {
       ) {
          alert('Please fill in the input fields');
          return;
+      } else if (String(username).length >= 12) {
+         alert('Enter a shorter username');
+         return;
       }
+
       if (Number(passwordInput) === password) {
          localStorage.setItem('username', username);
          navigation('/Employees');
