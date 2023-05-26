@@ -1,0 +1,26 @@
+.About {
+   padding-top: 123px;
+}
+.About .about-wrapper {
+   padding: 0 20px 20px 20px;
+}
+
+.About .about-informations {
+   margin: 30px auto 0 auto;
+   width: 100%; min-width: 250px; max-width: 400px;
+   padding: 30px 20px;
+   background-color: var(--color-01);
+   border-radius: 20px;
+   text-align: center;
+   color: white;
+}
+.About .text-indent {
+   margin-top: 10px;
+   text-indent: 2rem;
+   text-align: left;
+}
+
+.About .about-link {
+   color: blue;
+   text-decoration: underline;
+}
